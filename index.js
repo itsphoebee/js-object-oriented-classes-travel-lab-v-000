@@ -30,7 +30,7 @@ Route.prototype.blocksTravelled = function(beginningLocation, endingLocation){
 }
 
 Route.prototype.estimatedTime = function(peak){
-  if peak {
+  if (peak) {
     return this.blocksTravelled() / 2
   }
   else {
