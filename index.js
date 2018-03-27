@@ -19,7 +19,7 @@ class Route {
 Route.prototype.blocksTravelled = function(beginningLocation, endingLocation){
   const horizontalDistance = beginningLocation.horizontal - endingLocation.horizontal
   const verticalDistance = beginningLocation.vertical - endingLocation.vertical
-  return totalDistance = horizontalDistance + verticalDistance
+  return totalDistance = horizontalDistance + verticalDistance;
 
 }
 
