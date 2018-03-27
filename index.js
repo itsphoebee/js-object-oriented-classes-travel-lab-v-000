@@ -17,10 +17,16 @@ class Route {
 }
 
 Route.prototype.blocksTravelled = function(beginningLocation, endingLocation){
-  const horizontalDistance = beginningLocation.horizontal - endingLocation.horizontal
-  const verticalDistance = beginningLocation.vertical - endingLocation.vertical
-  return totalDistance = horizontalDistance + verticalDistance;
+  let eastWest = ['1st Avenue', '2nd Avenue', '3rd Avenue', 'Lexington Avenue', 'Park', 'Madison Avenue', '5th Avenue']
 
+  function distanceAsIndex(avenue){
+    return eastWest.indexOf(avenue)
+  }
+
+  const horizontalDistance = distanceAsIndex(Object.values(beginningLocation)[0]) - Object.values(endingLocation)[0]
+  const verticalDistance = Object.values(beginningLocation)[1] - Object.values(endingLocation)[1]
+  
+  return totalDistance = horizontalDistance + verticalDistance;
 }
 
 Route.prototype.estimatedTime = function(){
