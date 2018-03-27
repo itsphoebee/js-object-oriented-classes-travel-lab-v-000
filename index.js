@@ -6,7 +6,7 @@ class Driver {
 }
 
 Driver.prototype.yearsExperienceFromBeginningOf = function(year){
-  return year - this.startDate.getFullYear();
+  return year - this.startDate.getYear();
 }
 
 class Route {
