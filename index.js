@@ -16,7 +16,8 @@ class Route {
   }
 }
 
-Route.prototype.blocksTravelled = function(){
+Route.prototype.blocksTravelled = function(beginningLocation, endingLocation){
+  return beginningLocation - endingLocation;
 
 }
 
