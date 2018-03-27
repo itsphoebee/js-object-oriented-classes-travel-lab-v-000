@@ -17,10 +17,12 @@ class Route {
 }
 
 Route.prototype.blocksTravelled = function(beginningLocation, endingLocation){
-  return beginningLocation - endingLocation;
+  const horizontalDistance = beginningLocation.horizontal - endingLocation.horizontal
+  const verticalDistance = beginningLocation.vertical - endingLocation.vertical
+  return totalDistance = horizontalDistance + verticalDistance
 
 }
 
 Route.prototype.estimatedTime = function(){
-  
+
 }
