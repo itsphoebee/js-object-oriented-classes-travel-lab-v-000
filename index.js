@@ -29,8 +29,8 @@ Route.prototype.blocksTravelled = function(beginningLocation, endingLocation){
   return Math.abs(totalDistance = horizontalDistance + verticalDistance);
 }
 
-Route.prototype.estimatedTime = function(peak){
-  if peak{
+Route.prototype.estimatedTime = function(){
+  if peak {
     return this.blocksTravelled() / 2
   }
   else {
