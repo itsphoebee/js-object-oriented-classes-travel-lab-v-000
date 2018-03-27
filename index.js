@@ -5,7 +5,9 @@ class Driver {
   }
 }
 
-Driver.prototype.startDate
+Driver.prototype.yearsExperienceFromBeginningOf = function(year){
+  return year - startDate
+}
 
 class Route {
   constructor(beginningLocation, endingLocation){
