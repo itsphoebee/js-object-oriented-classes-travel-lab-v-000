@@ -24,6 +24,7 @@ Route.prototype.blocksTravelled = function(beginningLocation, endingLocation){
   }
 
   const horizontalDistance = distanceAsIndex(Object.values(beginningLocation)[0]) - distanceAsIndex(Object.values(endingLocation)[0])
+  console.log(horizontalDistance)
   const verticalDistance = Object.values(beginningLocation)[1] - Object.values(endingLocation)[1]
 
   return totalDistance = horizontalDistance + verticalDistance;
