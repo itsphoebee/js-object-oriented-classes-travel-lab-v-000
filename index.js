@@ -17,5 +17,9 @@ class Route {
 }
 
 Route.prototype.blocksTravelled = function(){
+
+}
+
+Route.prototype.estimatedTime = function(){
   
 }
