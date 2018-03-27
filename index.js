@@ -14,5 +14,8 @@ class Route {
     this.beginningLocation = beginningLocation
     this.endingLocation = endingLocation
   }
+}
 
+Route.prototype.blocksTravelled = function(){
+  
 }
